@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .main {
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+  .main img {
+    width: 100%;
+  }
+  .main h1 {
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    color: white;
+    font-family: var(--font-lomino);
+    font-size: 3.5rem;
+    letter-spacing: -0.075rem;
+    line-height: 110%;
+    font-weight: 400;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .content {
+    font-family: var(--font-lomino);
+    font-size: 3.26rem;
+    letter-spacing: -0.045rem;
+    line-height: 120%;
+    font-weight: 400;
+    margin: 10% 4% 30% 4%;
+  }
+  .content p {
+    margin-bottom: 10px;
+  }
+  .content2 {
+    font-family: var(--font-lomino);
+    font-size: 1.3rem;
+    letter-spacing: -0.045rem;
+    line-height: 120%;
+    font-weight: 400;
+    margin: 10px 4% 10% 15%;
+    margin-top: 3%;
+  }
+  .content3 {
+    font-family: var(--font-diatype-mono);
+    font-size: small;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding-top: 110%;
+    padding-left: 4%;
+  }
+  .heading {
+    margin: 0;
+    padding: 0;
+  }
+  .heading h3 {
+    padding-top: 10%;
+    font-family: var(--font-lomino);
+  }
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .flex-item  {
+    flex: 1 1 calc(33.33% - 20px); /* Ensures three items per row with gap */
+    box-sizing: border-box; /* Prevents padding and border from affecting the width */
+    align-self: flex-start; /* Ensures items align at the top */
+    /* border: solid 2px black; */
+  }
+ 
+  .color {
+    width: 100%;
+    margin-top: 5%;
+  }
+  .color p {
+    position: relative;
+    font-family: var(--font-lomino);
+    font-size: 2.5rem;
+    line-height: 110%;
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    bottom: 10%;
+    left: 10%;
+    color: black;
+    box-sizing: border-box;
+    /* background-color: white; */
+    /* padding-bottom: 10%; */
+    bottom: 60%;
+    /* right: 40%; */
+    /* margin-right: 10%; */
+    /* padding-right: 10%; */
+    /* top: 80%; */
+    padding-top: 23%;
+    padding-right: 10%;
+    margin-right: 35%;
+    margin-top: 15%;
+  }
+  
+  footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    font-size: 1.6em;
+    text-align: center;
+    /* margin-bottom: 100%; */
+  }
+  
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin-top: 10%; */
+    /* padding-bottom: 30%; */
+  }
+  
+  .footer-column {
+    margin: 20px;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin: 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #ddd;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .main {
+      position: relative;
+      width: 100%;
+      height: 70vh;
+      /* margin: auto; */
+    }
+    .main img {
+      width: 100%;
+      height: 100%;
+    }
+    .main h1 {
+      position: relative;
+      top: 0;
+      /* top: 250px; */
+      /* bottom: 1500px; */
+      bottom: 250px;
+      width: 100%;
+      color: white;
+      font-family: var(--font-lomino);
+      font-size: 2.2rem;
+      /* letter-spacing: -0.075rem; */
+      /* line-height: 110%; */
+      font-weight: 400;
+      /* text-align: left; */
+      /* padding: 10px; */
+      border-radius: 5px;
+    }
+    .content {
+      font-family: var(--font-lomino);
+      font-size: 2.2rem;
+      width: 100%;
+      letter-spacing: -0.045rem;
+      line-height: 120%;
+      font-weight: 400;
+      margin: 30% 4% 30% 4%;
+    }
+  
+    .content3 {
+      font-family: var(--font-diatype-mono);
+      font-size: small;
+      position: static;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      padding-top: 20px;
+      padding-left: 0;
+    }
+    .heading h3 {
+      padding-top: 0;
+      font-family: var(--font-lomino);
+    }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      flex-direction: column;
+      /* border: 2px solid black; */
+    }
+  
+    .flex-item {
+      border: 2px solid lightgray;
+      flex: 1 1 calc(33.33% - 20px); /* Ensures three items per row with gap */
+      box-sizing: border-box; /* Prevents padding and border from affecting the width */
+      align-self: flex-start; /* Ensures items align at the top */
+      /* border: solid 2px black; */
+    }
+  
+    .color p {
+      position: static;
+      font-family: var(--font-lomino);
+      font-size: 1.5rem;
+      line-height: 110%;
+  
+      padding-top: 0%;
+      padding-right: 10%;
+      margin-right: 35%;
+      margin-top: 0;
+      width: 100%;
+    }
+  }
